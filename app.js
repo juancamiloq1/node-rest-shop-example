@@ -12,6 +12,7 @@ mongoose.connect(
   db_uri,
   { useNewUrlParser: true }
 );
+//mongoose.Promise = global.Promise; // here we solve a warning deprecation that i didn't find
 
 const productsRoutes = require("./api/routes/products");
 const ordersRoutes = require("./api/routes/orders");
