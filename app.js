@@ -2,6 +2,16 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+
+const db_uri =
+  "mongodb+srv://juancamiloqhz:" +
+  process.env.MONGO_ATLAS_PW +
+  "@cluster0-xold0.mongodb.net/test?retryWrites=true";
+mongoose.connect(
+  db_uri,
+  { useNewUrlParser: true }
+);
 
 const productsRoutes = require("./api/routes/products");
 const ordersRoutes = require("./api/routes/orders");
