@@ -1,0 +1,15 @@
+{
+  "name": "node-rest-shop-academind",
+  "version": "1.0.0",
+  "description": "A Node.js RESTful API tutorial by Academind (build simple shop API)",
+  "main": "index.js",
+  "author": "JuanCamiloQHz <juancamiloqhz@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.18.3"
+  }
+}
